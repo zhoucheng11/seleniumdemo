@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <test name="Test1">
+        <listeners>
+            <listener class-name="com.zhoucheng.selenium.utils.RetryListener" />
+            <listener class-name="com.zhoucheng.selenium.utils.TestNGListenerScreen" />
+            <listener class-name="com.zhoucheng.selenium.utils.ExtentTestNGIReporterListener" />
+        </listeners>
+        <classes>
+            <class name="com.zhoucheng.selenium.testCase.login"/>
+        </classes>
+    </test>
+</suite>
